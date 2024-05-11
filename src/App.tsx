@@ -1,8 +1,8 @@
-import Routes from "./routes/routes.tsx";
+import MainRoutes from "./routes/routes.tsx";
 
 function App() {
   return (
-      <Routes />
+      <MainRoutes />
   )
 }
 
