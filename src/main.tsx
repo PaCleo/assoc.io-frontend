@@ -1,11 +1,26 @@
-import React from 'react'
-import ReactDOM from 'react-dom/client'
-import './index.css'
-import App from "./App.tsx";
+import { Auth0Provider } from '@auth0/auth0-react';
+import { createRoot } from 'react-dom/client';
+import App from './App';
 
+const domain: string = "domain";
+const clientId: string = "clientId";
 
-ReactDOM.createRoot(document.getElementById('root')!).render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>
-)
+const rootElement = document.getElementById('root');
+
+if (rootElement) {
+    const root = createRoot(rootElement);
+
+    root.render(
+        <Auth0Provider
+            domain={domain}
+            clientId={clientId}
+            authorizationParams={{
+                redirect_uri: window.location.origin,
+            }}
+        >
+            <App />
+        </Auth0Provider>
+    );
+} else {
+    console.error("Root element not found");
+}
