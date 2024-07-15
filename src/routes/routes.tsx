@@ -1,5 +1,5 @@
 import {BrowserRouter, Route, Routes} from 'react-router-dom';
-import Home from '../components/Home.tsx';
+import Home from '../components/home/Home.tsx';
 
 const MainRoutes = () => {
     return (

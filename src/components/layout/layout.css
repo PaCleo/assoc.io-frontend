@@ -1,0 +1,23 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+.layout {
+    display: flex;
+    height: 100vh;
+}
+
+.content {
+    margin-top: 60px;
+    width: 100%;
+ }
+
+.content.sidebar-open {
+    margin-left: 220px;
+}
+
+.content.sidebar-closed {
+    margin-left: 60px;
+}

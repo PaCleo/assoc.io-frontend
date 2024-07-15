@@ -1,0 +1,42 @@
+.sideBar {
+    background-color: #2D3740;
+    color: #16C081;
+    padding-top: 10px;
+    padding-left: 20px;
+    display: flex;
+    align-items: center;
+    height: calc(100vh - 60px);
+    flex-direction: column;
+    top: 60px;
+    left: 0;
+    position: fixed;
+    transition: width 0.3s ease;
+}
+
+.sideBar.open {
+    width: 220px;
+    align-items: flex-start;
+}
+
+.sideBar.closed {
+    width: 60px;
+}
+
+.links {
+    padding-top: 5px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a {
+    text-decoration: none;
+    color: #16C081;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

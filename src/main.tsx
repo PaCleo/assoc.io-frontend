@@ -2,8 +2,8 @@ import { Auth0Provider } from '@auth0/auth0-react';
 import { createRoot } from 'react-dom/client';
 import App from './App';
 
-const domain: string = "domain";
-const clientId: string = "clientId";
+const domain: string = "tobiasmarion.us.auth0.com";
+const clientId: string = "d880RfbIfCwu2NXRKzlu2bTwd7rPcjwY";
 
 const rootElement = document.getElementById('root');
 
